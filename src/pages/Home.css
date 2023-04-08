@@ -59,32 +59,38 @@
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    cursor: pointer;
 }
+
+
 .bottom-text{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-color: rgba(29, 29, 29, 0);
+    margin-right: 16px;
+    padding-right: 16px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
     font-family: 'DanaBold';
-    font-size: 0rem;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: 0.3s;
 }
 .bottom-text:hover{
     width: 100%;
-    height: 100%;
+    
     background-color: rgba(29, 29, 29, 0.795);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
     font-family: 'DanaBold';
-    font-size: 3rem;
+    font-size: 2rem;
     color: aliceblue;
 }
 
@@ -133,7 +139,7 @@
     .main-container{
         background-color: black;
         width: 100%-32px;
-        
+        height: 100%;
         margin-top: 16px;
         margin-left: 16px;
         margin-right: 16px;
@@ -158,6 +164,14 @@
     }
     
    
-
+    .HomeCarts{
+        background-color: aliceblue;
+        width: 100%-4;
+        height: 100%;
+        margin: 2px;
+        border-radius: 15px;
+        
+        
+    }
 
 }

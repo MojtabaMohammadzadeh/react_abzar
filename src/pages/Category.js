@@ -10,7 +10,7 @@ function Category() {
 
             <div className='main-section' style={{backgroundImage : `url(${noise})`}}>
                 <div className='img-section' style={{backgroundImage : `url(${team})`}}></div>
-                <h2>دسته بندی در حال بروز رسانی می باشد</h2>
+                <h5>دسته بندی در حال بروز رسانی می باشد</h5>
             </div>
 
         </div>

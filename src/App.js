@@ -11,6 +11,7 @@ import ContactUs from "./pages/ContactUs";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Error from "./pages/Error";
+import DownloadApps from './pages/DownloadApps';
 function App() {
   return ( 
     <>
@@ -26,6 +27,8 @@ function App() {
         <Route path="contactus" element={<ContactUs />} />
         <Route path="login" element={<Login />} />
         <Route path="profile" element={<Profile />} />
+        <Route path="apps" element={<DownloadApps />} />
+
         <Route path="*" element={<Error />} />
         </Routes>
         </Router>

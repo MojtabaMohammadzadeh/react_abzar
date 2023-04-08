@@ -10,7 +10,7 @@ function News() {
 
             <div className='main-section' style={{backgroundImage : `url(${noise})`}}>
                 <div className='img-section' style={{backgroundImage : `url(${team})`}}></div>
-                <h2>اخبار در حال به روز رسانی می باشد</h2>
+                <h5>اخبار در حال به روز رسانی می باشد</h5>
             </div>
 
         </div>

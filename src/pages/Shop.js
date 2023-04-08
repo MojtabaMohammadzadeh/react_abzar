@@ -10,7 +10,7 @@ function Shop() {
 
             <div className='main-section' style={{backgroundImage : `url(${noise})`}}>
                 <div className='img-section' style={{backgroundImage : `url(${team})`}}></div>
-                <h2>فروشگاه در حال به روز رسانی می باشد</h2>
+                <h5>فروشگاه در حال به روز رسانی می باشد</h5>
             </div>
 
         </div>

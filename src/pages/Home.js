@@ -5,12 +5,18 @@ import imgsanat from './images/imgsanat.png';
 import brand from './images/brand.png';
 import category from './images/category.png';
 import shop from './images/shop.png';
+import { useNavigate } from "react-router-dom";
+
 
 const Home =() => {
+    const navigate = useNavigate();
 
-    function handleClick() {
-        alert('You clicked me!');
+    function handleClick2(link) {
+        
+        navigate(link);
       }
+
+    
 
     return ( 
         <>
@@ -29,7 +35,7 @@ const Home =() => {
  با نصب اپلیکیشن ابزار صنعت همیشه در اختیار شما می باشد.<br/><br/> به جمع خانواده ابزار صنعت بپیوندید :)
                             </p></div>
                         <div className='btn-container'>
-                        <button className='btn' onClick={handleClick}>دانلود اپلیکیشن</button>
+                        <button className='btn' onClick={()=>handleClick2('/apps')}>دانلود اپلیکیشن</button>
                         </div>
 
                 </div>
@@ -37,18 +43,25 @@ const Home =() => {
                 
             </div>
             <div className='bottom-section'>
-                <div className='HomeCarts' style={{backgroundImage : `url(${shop})`}}>
-                    <div className='bottom-text'>
+                <div 
+                onClick={()=>handleClick2('/shop')}
+                className='HomeCarts'
+                 style={{backgroundImage : `url(${shop})`}}>
+                    <div className='bottom-text' >
                         فروشگاه
                     </div>
-
+                    
                 </div>
-                <div className='HomeCarts' style={{backgroundImage : `url(${category})`}}>
+                <div
+                onClick={()=>handleClick2('/category')}
+                className='HomeCarts' style={{backgroundImage : `url(${category})`}}>
                     <div className='bottom-text'>
                         دسته‌بندی
                     </div>
                 </div>
-                <div className='HomeCarts' style={{backgroundImage : `url(${brand})`}}>
+                <div 
+                onClick={()=>handleClick2('/brands')}
+                className='HomeCarts' style={{backgroundImage : `url(${brand})`}}>
                     <div className='bottom-text'>
                         برندها
                     </div>
